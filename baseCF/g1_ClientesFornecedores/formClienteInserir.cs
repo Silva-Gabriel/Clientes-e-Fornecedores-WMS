@@ -72,44 +72,6 @@ namespace baseCF
 
             }
         }
-      
-        public void fillCboBanco()
-
-        {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblBanco ORDER BY g1_tblBanco.descBanco";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboBanco.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboBanco.DisplayMember = "descBanco";
-                cboBanco.ValueMember = "idBanco";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-        }
 
         private void txtRazaoSocial_TextChanged(object sender, EventArgs e)
         {
@@ -173,14 +135,13 @@ namespace baseCF
                 
                 if (ValidarDuplicidade() > 0)
                     {
-                        MessageBox.Show("Esse cliente já se encontra registrado. Favor revisar os dados para prosseguir");
+                        MessageBox.Show("Esse cliente já se encontra registrado. Favor revisar os dados para prosseguir","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     }
                 else if (ValidarDuplicidade() < 0)
                     {
 
                     try
                         {
-                            
                             
                             OleDbConnection con = new OleDbConnection(Globals.ConnString);
                             con.Open();
@@ -244,7 +205,7 @@ namespace baseCF
                         }
 
 
-                        MessageBox.Show("Dados gravados com sucesso");
+                        MessageBox.Show("Dados gravados com sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else if (ValidarDuplicidade() == 0)
                     {
@@ -289,7 +250,6 @@ namespace baseCF
 
                         catch (Exception erro)
                         {
-
                             MessageBox.Show(erro.Message);
                         }
                     }

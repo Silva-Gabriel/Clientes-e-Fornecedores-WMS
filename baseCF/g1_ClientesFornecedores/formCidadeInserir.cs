@@ -14,10 +14,11 @@ namespace baseCF
 {
     public partial class formCidadeInserir : Form
     {
+        Fill fill = new Fill();
         public formCidadeInserir()
         {
             InitializeComponent();
-            fillEstado();
+            fill.fillEstado(cboEstado);
         }
 
         private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace baseCF
 
                     OleDbCommand cmd = new OleDbCommand(SQL,con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Dados gravados com sucesso.");
+                    MessageBox.Show("Dados gravados com sucesso.","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                     UserI LC = new UserI();
 
@@ -76,7 +77,7 @@ namespace baseCF
                                                 
                 
             else
-                MessageBox.Show("Favor preencher todos os campos.");
+                MessageBox.Show("Favor preencher todos os campos.","Erro",MessageBoxButtons.OK,MessageBoxIcon.Warning);
         }
 
         private bool ValidarForm()
@@ -93,9 +94,6 @@ namespace baseCF
                 FormValido = true;
             return FormValido;
 
-
-
-
         }
 
         private void btnDesfazer_Click(object sender, EventArgs e)
@@ -104,42 +102,5 @@ namespace baseCF
             fechar.abrirFecharForm(this, formEstado.ActiveForm);
 
         }
-
-        void fillEstado()
-        {
-            try
-            {
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "Select * from g1_tblEstado";
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboEstado.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboEstado.DisplayMember = "siglaEstado";
-                cboEstado.ValueMember = "IdEstado";
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.ToString());
-            }
-
-
-        }
     }
-
-   
 }

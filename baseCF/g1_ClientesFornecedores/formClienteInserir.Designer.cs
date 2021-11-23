@@ -257,7 +257,7 @@ namespace baseCF
             this.txtCodigo.Location = new System.Drawing.Point(10, 26);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 43);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.Text = "000";
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -283,7 +283,7 @@ namespace baseCF
             this.btnSalvar.Location = new System.Drawing.Point(9, 18);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(88, 38);
-            this.btnSalvar.TabIndex = 19;
+            this.btnSalvar.TabIndex = 34;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -371,7 +371,7 @@ namespace baseCF
             this.cboStatusCadastro.Margin = new System.Windows.Forms.Padding(2);
             this.cboStatusCadastro.Name = "cboStatusCadastro";
             this.cboStatusCadastro.Size = new System.Drawing.Size(186, 20);
-            this.cboStatusCadastro.TabIndex = 55;
+            this.cboStatusCadastro.TabIndex = 1;
             // 
             // txtContato
             // 
@@ -379,7 +379,7 @@ namespace baseCF
             this.txtContato.Location = new System.Drawing.Point(783, 166);
             this.txtContato.Name = "txtContato";
             this.txtContato.Size = new System.Drawing.Size(192, 23);
-            this.txtContato.TabIndex = 54;
+            this.txtContato.TabIndex = 10;
             // 
             // label5
             // 
@@ -399,7 +399,7 @@ namespace baseCF
             this.mkdTelCelular.Mask = "(00) 00000-0000";
             this.mkdTelCelular.Name = "mkdTelCelular";
             this.mkdTelCelular.Size = new System.Drawing.Size(158, 23);
-            this.mkdTelCelular.TabIndex = 52;
+            this.mkdTelCelular.TabIndex = 12;
             // 
             // mkdTelFixo
             // 
@@ -409,7 +409,7 @@ namespace baseCF
             this.mkdTelFixo.Mask = "(00) 0000-0000";
             this.mkdTelFixo.Name = "mkdTelFixo";
             this.mkdTelFixo.Size = new System.Drawing.Size(158, 23);
-            this.mkdTelFixo.TabIndex = 51;
+            this.mkdTelFixo.TabIndex = 11;
             // 
             // mkdDataNascimento
             // 
@@ -419,7 +419,7 @@ namespace baseCF
             this.mkdDataNascimento.Mask = "00/00/0000";
             this.mkdDataNascimento.Name = "mkdDataNascimento";
             this.mkdDataNascimento.Size = new System.Drawing.Size(122, 23);
-            this.mkdDataNascimento.TabIndex = 50;
+            this.mkdDataNascimento.TabIndex = 9;
             // 
             // mkdCPF
             // 
@@ -429,7 +429,7 @@ namespace baseCF
             this.mkdCPF.Mask = "000\\.000\\.000-00";
             this.mkdCPF.Name = "mkdCPF";
             this.mkdCPF.Size = new System.Drawing.Size(210, 23);
-            this.mkdCPF.TabIndex = 49;
+            this.mkdCPF.TabIndex = 8;
             this.mkdCPF.Move += new System.EventHandler(this.mkdCPF_Move);
             // 
             // mkdCNPJ
@@ -440,7 +440,7 @@ namespace baseCF
             this.mkdCNPJ.Mask = "00\\.000\\.000/0000-00";
             this.mkdCNPJ.Name = "mkdCNPJ";
             this.mkdCNPJ.Size = new System.Drawing.Size(192, 23);
-            this.mkdCNPJ.TabIndex = 48;
+            this.mkdCNPJ.TabIndex = 6;
             this.mkdCNPJ.Move += new System.EventHandler(this.mkdCNPJ_Move);
             // 
             // rbtnPF
@@ -451,7 +451,7 @@ namespace baseCF
             this.rbtnPF.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnPF.Name = "rbtnPF";
             this.rbtnPF.Size = new System.Drawing.Size(93, 19);
-            this.rbtnPF.TabIndex = 47;
+            this.rbtnPF.TabIndex = 3;
             this.rbtnPF.TabStop = true;
             this.rbtnPF.Text = "Pessoa Física";
             this.rbtnPF.UseVisualStyleBackColor = true;
@@ -465,7 +465,7 @@ namespace baseCF
             this.rbtnPJ.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnPJ.Name = "rbtnPJ";
             this.rbtnPJ.Size = new System.Drawing.Size(105, 19);
-            this.rbtnPJ.TabIndex = 46;
+            this.rbtnPJ.TabIndex = 2;
             this.rbtnPJ.TabStop = true;
             this.rbtnPJ.Text = "Pessoa Jurídica";
             this.rbtnPJ.UseVisualStyleBackColor = true;
@@ -477,7 +477,7 @@ namespace baseCF
             this.txtEmail.Location = new System.Drawing.Point(379, 234);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(482, 23);
-            this.txtEmail.TabIndex = 45;
+            this.txtEmail.TabIndex = 13;
             // 
             // label15
             // 
@@ -535,7 +535,7 @@ namespace baseCF
             this.txtNome.Location = new System.Drawing.Point(12, 166);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(389, 23);
-            this.txtNome.TabIndex = 35;
+            this.txtNome.TabIndex = 7;
             // 
             // label9
             // 
@@ -563,7 +563,7 @@ namespace baseCF
             this.txtRazaoSocial.Location = new System.Drawing.Point(10, 108);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(373, 23);
-            this.txtRazaoSocial.TabIndex = 31;
+            this.txtRazaoSocial.TabIndex = 4;
             this.txtRazaoSocial.TextChanged += new System.EventHandler(this.txtRazaoSocial_TextChanged);
             // 
             // label7
@@ -582,7 +582,7 @@ namespace baseCF
             this.txtNomeFantasia.Location = new System.Drawing.Point(399, 108);
             this.txtNomeFantasia.Name = "txtNomeFantasia";
             this.txtNomeFantasia.Size = new System.Drawing.Size(365, 23);
-            this.txtNomeFantasia.TabIndex = 29;
+            this.txtNomeFantasia.TabIndex = 5;
             this.ttlCamposObrigatorios.SetToolTip(this.txtNomeFantasia, "Campo de preenchimento obrigatório");
             this.txtNomeFantasia.MouseMove += new System.Windows.Forms.MouseEventHandler(this.txtNomeFantasia_MouseMove);
             this.txtNomeFantasia.Move += new System.EventHandler(this.txtNomeFantasia_Move);
@@ -630,7 +630,7 @@ namespace baseCF
             this.mkdCEP.Mask = "00000-000";
             this.mkdCEP.Name = "mkdCEP";
             this.mkdCEP.Size = new System.Drawing.Size(106, 23);
-            this.mkdCEP.TabIndex = 45;
+            this.mkdCEP.TabIndex = 22;
             // 
             // label22
             // 
@@ -648,7 +648,7 @@ namespace baseCF
             this.txtComplemento.Location = new System.Drawing.Point(18, 107);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(177, 23);
-            this.txtComplemento.TabIndex = 43;
+            this.txtComplemento.TabIndex = 21;
             // 
             // label21
             // 
@@ -685,7 +685,7 @@ namespace baseCF
             this.txtLogradouro.Location = new System.Drawing.Point(527, 44);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(412, 23);
-            this.txtLogradouro.TabIndex = 39;
+            this.txtLogradouro.TabIndex = 20;
             // 
             // label19
             // 
@@ -705,7 +705,7 @@ namespace baseCF
             this.cboBairro.Margin = new System.Windows.Forms.Padding(2);
             this.cboBairro.Name = "cboBairro";
             this.cboBairro.Size = new System.Drawing.Size(208, 23);
-            this.cboBairro.TabIndex = 37;
+            this.cboBairro.TabIndex = 19;
             this.cboBairro.Move += new System.EventHandler(this.cboBairro_Move);
             // 
             // label18
@@ -726,7 +726,7 @@ namespace baseCF
             this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(164, 23);
-            this.cboCidade.TabIndex = 35;
+            this.cboCidade.TabIndex = 18;
             this.cboCidade.SelectionChangeCommitted += new System.EventHandler(this.cboCidade_SelectionChangeCommitted);
             this.cboCidade.Move += new System.EventHandler(this.cboCidade_Move);
             // 
@@ -748,7 +748,7 @@ namespace baseCF
             this.cboEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(92, 23);
-            this.cboEstado.TabIndex = 33;
+            this.cboEstado.TabIndex = 17;
             this.cboEstado.SelectionChangeCommitted += new System.EventHandler(this.cboEstado_SelectionChangeCommitted);
             this.cboEstado.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboEstado_MouseClick);
             this.cboEstado.Move += new System.EventHandler(this.cboEstado_Move);
@@ -796,7 +796,7 @@ namespace baseCF
             this.txtDigitoVerificador.Location = new System.Drawing.Point(602, 192);
             this.txtDigitoVerificador.Name = "txtDigitoVerificador";
             this.txtDigitoVerificador.Size = new System.Drawing.Size(48, 23);
-            this.txtDigitoVerificador.TabIndex = 63;
+            this.txtDigitoVerificador.TabIndex = 30;
             // 
             // label32
             // 
@@ -814,7 +814,7 @@ namespace baseCF
             this.txtContaCorrente.Location = new System.Drawing.Point(407, 192);
             this.txtContaCorrente.Name = "txtContaCorrente";
             this.txtContaCorrente.Size = new System.Drawing.Size(177, 23);
-            this.txtContaCorrente.TabIndex = 61;
+            this.txtContaCorrente.TabIndex = 29;
             // 
             // label31
             // 
@@ -832,7 +832,7 @@ namespace baseCF
             this.txtAgencia.Location = new System.Drawing.Point(214, 192);
             this.txtAgencia.Name = "txtAgencia";
             this.txtAgencia.Size = new System.Drawing.Size(177, 23);
-            this.txtAgencia.TabIndex = 59;
+            this.txtAgencia.TabIndex = 28;
             // 
             // label30
             // 
@@ -852,7 +852,7 @@ namespace baseCF
             this.cboBanco.Margin = new System.Windows.Forms.Padding(2);
             this.cboBanco.Name = "cboBanco";
             this.cboBanco.Size = new System.Drawing.Size(177, 23);
-            this.cboBanco.TabIndex = 57;
+            this.cboBanco.TabIndex = 27;
             this.cboBanco.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboBanco_MouseClick);
             this.cboBanco.Move += new System.EventHandler(this.cboBanco_Move);
             // 
@@ -874,7 +874,7 @@ namespace baseCF
             this.cboSegmento.Margin = new System.Windows.Forms.Padding(2);
             this.cboSegmento.Name = "cboSegmento";
             this.cboSegmento.Size = new System.Drawing.Size(177, 23);
-            this.cboSegmento.TabIndex = 55;
+            this.cboSegmento.TabIndex = 26;
             this.cboSegmento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboSegmento_MouseClick);
             this.cboSegmento.Move += new System.EventHandler(this.cboSegmento_Move);
             // 
@@ -894,7 +894,7 @@ namespace baseCF
             this.txtNivelSLA.Location = new System.Drawing.Point(19, 120);
             this.txtNivelSLA.Name = "txtNivelSLA";
             this.txtNivelSLA.Size = new System.Drawing.Size(177, 23);
-            this.txtNivelSLA.TabIndex = 53;
+            this.txtNivelSLA.TabIndex = 25;
             // 
             // label27
             // 
@@ -912,7 +912,7 @@ namespace baseCF
             this.txtInsMunicipal.Location = new System.Drawing.Point(214, 41);
             this.txtInsMunicipal.Name = "txtInsMunicipal";
             this.txtInsMunicipal.Size = new System.Drawing.Size(177, 23);
-            this.txtInsMunicipal.TabIndex = 47;
+            this.txtInsMunicipal.TabIndex = 24;
             // 
             // label24
             // 
@@ -930,7 +930,7 @@ namespace baseCF
             this.txtInsEstadual.Location = new System.Drawing.Point(19, 41);
             this.txtInsEstadual.Name = "txtInsEstadual";
             this.txtInsEstadual.Size = new System.Drawing.Size(177, 23);
-            this.txtInsEstadual.TabIndex = 45;
+            this.txtInsEstadual.TabIndex = 23;
             // 
             // label23
             // 
@@ -965,7 +965,7 @@ namespace baseCF
             this.txtDadosAdicionais3.Location = new System.Drawing.Point(19, 203);
             this.txtDadosAdicionais3.Name = "txtDadosAdicionais3";
             this.txtDadosAdicionais3.Size = new System.Drawing.Size(506, 23);
-            this.txtDadosAdicionais3.TabIndex = 51;
+            this.txtDadosAdicionais3.TabIndex = 33;
             // 
             // label35
             // 
@@ -983,7 +983,7 @@ namespace baseCF
             this.txtDadosAdicionais2.Location = new System.Drawing.Point(19, 122);
             this.txtDadosAdicionais2.Name = "txtDadosAdicionais2";
             this.txtDadosAdicionais2.Size = new System.Drawing.Size(506, 23);
-            this.txtDadosAdicionais2.TabIndex = 49;
+            this.txtDadosAdicionais2.TabIndex = 32;
             // 
             // label34
             // 
@@ -1001,7 +1001,7 @@ namespace baseCF
             this.txtDadosAdicionais1.Location = new System.Drawing.Point(19, 42);
             this.txtDadosAdicionais1.Name = "txtDadosAdicionais1";
             this.txtDadosAdicionais1.Size = new System.Drawing.Size(506, 23);
-            this.txtDadosAdicionais1.TabIndex = 47;
+            this.txtDadosAdicionais1.TabIndex = 31;
             // 
             // label33
             // 
@@ -1061,7 +1061,7 @@ namespace baseCF
             this.chkEditar.Margin = new System.Windows.Forms.Padding(2);
             this.chkEditar.Name = "chkEditar";
             this.chkEditar.Size = new System.Drawing.Size(84, 17);
-            this.chkEditar.TabIndex = 30;
+            this.chkEditar.TabIndex = 16;
             this.chkEditar.Text = "editarCliente";
             this.chkEditar.UseVisualStyleBackColor = true;
             this.chkEditar.Visible = false;
@@ -1088,7 +1088,7 @@ namespace baseCF
             this.button8.Location = new System.Drawing.Point(1034, 630);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(88, 38);
-            this.button8.TabIndex = 21;
+            this.button8.TabIndex = 35;
             this.button8.Text = "        Fechar";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
