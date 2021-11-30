@@ -106,3 +106,5 @@ C:\GITHUB\ClientesFornecedoresWMS\baseCF\obj\Debug\baseCF.csproj.GenerateResourc
 C:\GITHUB\ClientesFornecedoresWMS\baseCF\obj\Debug\baseCF.csproj.CoreCompileInputs.cache
 C:\GITHUB\ClientesFornecedoresWMS\baseCF\obj\Debug\baseCF.exe
 C:\GITHUB\ClientesFornecedoresWMS\baseCF\obj\Debug\baseCF.pdb
+C:\GITHUB\ClientesFornecedoresWMS\baseCF\bin\Debug\System.Data.OleDb.dll
+C:\GITHUB\ClientesFornecedoresWMS\baseCF\bin\Debug\System.Data.OleDb.xml

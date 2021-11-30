@@ -30,7 +30,16 @@ namespace baseCF
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (dataGridView2.CurrentCell.Value.ToString() != null)
+            {
+                button7.Enabled = true;
+                button8.Enabled = true;
+            }
+            else 
+            {
+                button7.Enabled = false;
+                button8.Enabled = false;
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -47,7 +56,7 @@ namespace baseCF
             frm.codigo.Text = dataGridView2.SelectedCells[0].Value.ToString();
             frm.Status.Text = dataGridView2.SelectedCells[1].Value.ToString();
 
-                        
+
             frm.btnSalvar.Visible = false;
             frm.btnAlterar.Visible = true;
 
@@ -56,49 +65,48 @@ namespace baseCF
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //DialogResult res = MessageBox.Show("Confirma exclusão?", "", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Confirma exclusão?", "", MessageBoxButtons.YesNo);
 
-            //if (res == DialogResult.Yes)
+            if (res == DialogResult.Yes)
 
-            //    try
-            //{
-            //    var selectedCells = this.dataGridView2.SelectedCells;
+            try
+            {
+                var selectedCells = this.dataGridView2.SelectedCells;
 
-            //        OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            //        con.Open();
-                    
+                OleDbConnection con = new OleDbConnection(Globals.ConnString);
+                    con.Open();
 
-            //    OleDbCommand comando = new OleDbCommand();
-            //    comando.Connection = con;
+                    OleDbCommand comando = new OleDbCommand();
+                    comando.Connection = con;
 
-            //    var selectedRowIndex = selectedCells[0].RowIndex;
+                    var selectedrowindex = selectedCells[0].RowIndex;
 
-            //    var rowData = this.dataGridView2.Rows[selectedRowIndex];
+                    var rowdata = this.dataGridView2.Rows[selectedrowindex];
 
-            //    var id = (int)rowData.Cells[0].Value;
+                    var id = (int)rowdata.Cells[0].Value;
 
-            //    comando.CommandText = "DELETE from g1_tblStatusCadastro WHERE idStatusCadastro = " + id;
+                    comando.CommandText = "delete from g1_tblstatuscadastro where idstatuscadastro = " + id;
 
-            //    comando.Connection = con;
+                    comando.Connection = con;
 
-            //    comando.CommandType = CommandType.Text;
+                    comando.CommandType = CommandType.Text;
 
-            //    int rowAffected = comando.ExecuteNonQuery();
+                    int rowaffected = comando.ExecuteNonQuery();
 
-            //    if (rowAffected == 0)
-            //    {
-            //        MessageBox.Show("Nenhuma linha encontrada!");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Dados excluídos com sucesso!");
-            //    }
-            //    con.Close();
-            //}
-            //catch (Exception erro)
-            //{
-            //    MessageBox.Show(erro.Message);
-            //}
+                    if (rowaffected == 0)
+                    {
+                        MessageBox.Show("nenhuma linha encontrada!","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("dados excluídos com sucesso!","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    con.Close();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
         }
 
         private void button1_Click(object sender, EventArgs e)

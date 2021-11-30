@@ -271,7 +271,7 @@ namespace baseCF
             this.picBuscar.Image = ((System.Drawing.Image)(resources.GetObject("picBuscar.Image")));
             this.picBuscar.InitialImage = null;
             this.picBuscar.Location = new System.Drawing.Point(942, 194);
-            this.picBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.picBuscar.Name = "picBuscar";
             this.picBuscar.Size = new System.Drawing.Size(46, 50);
             this.picBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -287,7 +287,7 @@ namespace baseCF
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(38, 114);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(792, 115);
@@ -309,9 +309,9 @@ namespace baseCF
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.textBox_telefoneCelular);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(784, 87);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados Cadastrais";
@@ -453,9 +453,9 @@ namespace baseCF
             this.tabPage2.Controls.Add(this.label19);
             this.tabPage2.Controls.Add(this.textBox_logradouro);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(784, 87);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Endereço";
@@ -467,7 +467,7 @@ namespace baseCF
             this.comboBox_bairro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_bairro.FormattingEnabled = true;
             this.comboBox_bairro.Location = new System.Drawing.Point(236, 25);
-            this.comboBox_bairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_bairro.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_bairro.Name = "comboBox_bairro";
             this.comboBox_bairro.Size = new System.Drawing.Size(98, 23);
             this.comboBox_bairro.TabIndex = 10;
@@ -479,7 +479,7 @@ namespace baseCF
             this.comboBox_cidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_cidade.FormattingEnabled = true;
             this.comboBox_cidade.Location = new System.Drawing.Point(102, 26);
-            this.comboBox_cidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_cidade.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_cidade.Name = "comboBox_cidade";
             this.comboBox_cidade.Size = new System.Drawing.Size(132, 23);
             this.comboBox_cidade.TabIndex = 9;
@@ -501,7 +501,7 @@ namespace baseCF
             this.comboBox_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_estado.FormattingEnabled = true;
             this.comboBox_estado.Location = new System.Drawing.Point(17, 25);
-            this.comboBox_estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_estado.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_estado.Name = "comboBox_estado";
             this.comboBox_estado.Size = new System.Drawing.Size(82, 23);
             this.comboBox_estado.TabIndex = 8;
@@ -614,7 +614,7 @@ namespace baseCF
             this.tabPage3.Controls.Add(this.label26);
             this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(784, 87);
             this.tabPage3.TabIndex = 2;
@@ -627,7 +627,7 @@ namespace baseCF
             this.comboBox_segmento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_segmento.FormattingEnabled = true;
             this.comboBox_segmento.Location = new System.Drawing.Point(351, 28);
-            this.comboBox_segmento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_segmento.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_segmento.Name = "comboBox_segmento";
             this.comboBox_segmento.Size = new System.Drawing.Size(99, 23);
             this.comboBox_segmento.TabIndex = 18;
@@ -645,7 +645,7 @@ namespace baseCF
             "12",
             "13"});
             this.comboBox_situacaoIcms.Location = new System.Drawing.Point(249, 28);
-            this.comboBox_situacaoIcms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_situacaoIcms.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_situacaoIcms.Name = "comboBox_situacaoIcms";
             this.comboBox_situacaoIcms.Size = new System.Drawing.Size(99, 23);
             this.comboBox_situacaoIcms.TabIndex = 17;
@@ -660,7 +660,7 @@ namespace baseCF
             "Lucro presumido ",
             "Lucro real"});
             this.comboBox_regimetTributacao.Location = new System.Drawing.Point(147, 28);
-            this.comboBox_regimetTributacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_regimetTributacao.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_regimetTributacao.Name = "comboBox_regimetTributacao";
             this.comboBox_regimetTributacao.Size = new System.Drawing.Size(99, 23);
             this.comboBox_regimetTributacao.TabIndex = 16;
@@ -761,7 +761,7 @@ namespace baseCF
             this.tabPage4.Controls.Add(this.label31);
             this.tabPage4.Controls.Add(this.textBox_digitoContaCorrente);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(784, 87);
             this.tabPage4.TabIndex = 3;
@@ -774,7 +774,7 @@ namespace baseCF
             this.comboBox_banco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_banco.FormattingEnabled = true;
             this.comboBox_banco.Location = new System.Drawing.Point(9, 25);
-            this.comboBox_banco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_banco.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_banco.Name = "comboBox_banco";
             this.comboBox_banco.Size = new System.Drawing.Size(82, 23);
             this.comboBox_banco.TabIndex = 21;
@@ -853,7 +853,7 @@ namespace baseCF
             this.tabPage5.Controls.Add(this.label21);
             this.tabPage5.Controls.Add(this.textBox_dadosAdicionais1);
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(784, 87);
             this.tabPage5.TabIndex = 4;
@@ -1091,7 +1091,7 @@ namespace baseCF
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1156, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1228, 24);
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -1128,7 +1128,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1156, 487);
+            this.ClientSize = new System.Drawing.Size(1228, 530);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox3);

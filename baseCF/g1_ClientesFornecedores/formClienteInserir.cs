@@ -102,19 +102,16 @@ namespace baseCF
         {
 
             int statusCa;
+            bool sucess = false;
 
             if (ValidarForm()) //Verifica se os dados obrigatórios foram preenchidos
-
             {
-                MessageBox.Show("Favor preencher todos os campos obrigatórios (*).");
+                MessageBox.Show("Favor preencher todos os campos obrigatórios (*).", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
             else //se todos foram preenchidos verifica se os campos foram preenchidos para verificar se fecha o cadastro.
-
             {
-
+                sucess = true;
                 if (ValidarStatus() == 2) //todos os dados preenchidos
-
                 {
                     DialogResult RespUsuario = MessageBox.Show("Todos os dados foram preenchidos. Deseja finalizar esse cadastro?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
@@ -130,19 +127,18 @@ namespace baseCF
                 else //caso ainda tenham campos em branco
                 {
                     statusCa = 1;
-
+                    //sucess = false;
                 }
                 
                 if (ValidarDuplicidade() > 0)
                     {
                         MessageBox.Show("Esse cliente já se encontra registrado. Favor revisar os dados para prosseguir","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        sucess = false;
                     }
                 else if (ValidarDuplicidade() < 0)
                     {
-
-                    try
+                        try
                         {
-                            
                             OleDbConnection con = new OleDbConnection(Globals.ConnString);
                             con.Open();
 
@@ -200,19 +196,13 @@ namespace baseCF
 
                         catch (Exception erro)
                         {
-
                             MessageBox.Show(erro.Message);
                         }
-
-
-                        MessageBox.Show("Dados gravados com sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    }
+                }
                     else if (ValidarDuplicidade() == 0)
                     {
                         try
                         {
-                            
-                            
                             OleDbConnection con = new OleDbConnection(Globals.ConnString);
                             con.Open();
 
@@ -233,7 +223,6 @@ namespace baseCF
                             SQL += "'" + txtDadosAdicionais3.Text + "')";
 
 
-
                             OleDbCommand cmd = new OleDbCommand(SQL, con);
                             cmd.ExecuteNonQuery();
 
@@ -242,10 +231,6 @@ namespace baseCF
                             LC.limparCampos(tabControl1.Controls);
 
                             con.Close();
-
-                            formCliente voltarFormCliente = new formCliente();
-                            voltarFormCliente.ShowDialog();
-                            this.Close();
                         }
 
                         catch (Exception erro)
@@ -253,8 +238,14 @@ namespace baseCF
                             MessageBox.Show(erro.Message);
                         }
                     }
-
                 }
+            if (sucess == true)
+            {
+                MessageBox.Show("Dados cadastrados com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+                MessageBox.Show("DEU ERRO VAGABUNDO!");
         }   
 
         private bool ValidarForm()

@@ -408,6 +408,7 @@ namespace baseCF
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button8.Enabled = false;
             this.button8.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -426,6 +427,7 @@ namespace baseCF
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button7.Enabled = false;
             this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

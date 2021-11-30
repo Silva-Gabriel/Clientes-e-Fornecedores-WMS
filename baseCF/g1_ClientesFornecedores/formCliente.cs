@@ -319,7 +319,7 @@ namespace baseCF
 
                 if (dgnClientes.Rows.Count == 1)
                 {
-                    MessageBox.Show("Nenhum fornecedor encontrado.");
+                    MessageBox.Show("Nenhum fornecedor encontrado.","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
             else
@@ -418,6 +418,27 @@ namespace baseCF
         private void btnExcluir_Click(object sender, EventArgs e)
         {
 
+            OleDbConnection con = new OleDbConnection(Globals.ConnString);
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
+
+            var selectedRowIndex = dgnClientes.SelectedCells[0].RowIndex;
+            var rowData = this.dgnClientes.Rows[selectedRowIndex];
+            var id = (int)rowData.Cells[0].Value;
+            cmd.CommandText = "DELETE from g1_tblClientes WHERE idCliente = " + id;
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            int rowAffected = cmd.ExecuteNonQuery();
+            if (rowAffected == 0)
+            {
+                MessageBox.Show("Uma linha deve ser selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Dados excluidos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            Consultar();
+            con.Close();
         }
     }
 }
